@@ -1,0 +1,15 @@
+C:\Users\Lucas\OneDrive\Documentos\MeusCodigos\AdvinhandoNumeros\bin\Debug\net8.0\AdvinhandoNumeros.exe
+C:\Users\Lucas\OneDrive\Documentos\MeusCodigos\AdvinhandoNumeros\bin\Debug\net8.0\AdvinhandoNumeros.deps.json
+C:\Users\Lucas\OneDrive\Documentos\MeusCodigos\AdvinhandoNumeros\bin\Debug\net8.0\AdvinhandoNumeros.runtimeconfig.json
+C:\Users\Lucas\OneDrive\Documentos\MeusCodigos\AdvinhandoNumeros\bin\Debug\net8.0\AdvinhandoNumeros.dll
+C:\Users\Lucas\OneDrive\Documentos\MeusCodigos\AdvinhandoNumeros\bin\Debug\net8.0\AdvinhandoNumeros.pdb
+C:\Users\Lucas\OneDrive\Documentos\MeusCodigos\AdvinhandoNumeros\obj\Debug\net8.0\AdvinhandoNumeros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucas\OneDrive\Documentos\MeusCodigos\AdvinhandoNumeros\obj\Debug\net8.0\AdvinhandoNumeros.AssemblyInfoInputs.cache
+C:\Users\Lucas\OneDrive\Documentos\MeusCodigos\AdvinhandoNumeros\obj\Debug\net8.0\AdvinhandoNumeros.AssemblyInfo.cs
+C:\Users\Lucas\OneDrive\Documentos\MeusCodigos\AdvinhandoNumeros\obj\Debug\net8.0\AdvinhandoNumeros.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\OneDrive\Documentos\MeusCodigos\AdvinhandoNumeros\obj\Debug\net8.0\AdvinhandoNumeros.sourcelink.json
+C:\Users\Lucas\OneDrive\Documentos\MeusCodigos\AdvinhandoNumeros\obj\Debug\net8.0\AdvinhandoNumeros.dll
+C:\Users\Lucas\OneDrive\Documentos\MeusCodigos\AdvinhandoNumeros\obj\Debug\net8.0\refint\AdvinhandoNumeros.dll
+C:\Users\Lucas\OneDrive\Documentos\MeusCodigos\AdvinhandoNumeros\obj\Debug\net8.0\AdvinhandoNumeros.pdb
+C:\Users\Lucas\OneDrive\Documentos\MeusCodigos\AdvinhandoNumeros\obj\Debug\net8.0\AdvinhandoNumeros.genruntimeconfig.cache
+C:\Users\Lucas\OneDrive\Documentos\MeusCodigos\AdvinhandoNumeros\obj\Debug\net8.0\ref\AdvinhandoNumeros.dll
