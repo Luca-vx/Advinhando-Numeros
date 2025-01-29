@@ -1,13 +1,19 @@
-﻿internal class Program
+﻿using System.Diagnostics;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
         // Chamei a função Random para gerar um numero aleatorio entre 1 e 101, 101 não é sorteado, para ser o numero pensado pela maquina
         Random random = new Random();
         bool continuar = true;
+        
+        // Função que mede o tempo decorrido do inicio ate o final
+        Stopwatch stopwatch = new Stopwatch();
 
         while (continuar)
-        {
+        {            
+            // Valor aleatorio que a maquina pensou
             int numeroMaquina = random.Next(1, 101);
 
             // Valor default do usuario que sera alterado sempre que o usuario digitar algum valor.
@@ -39,12 +45,14 @@
             }
             // Pergunta ao usuario um numero e o compara com o escolhido pela maquina
             Console.WriteLine("digite seu numero abaixo:");
+
+            // Inicia o cronometro
+            stopwatch.Start();
             while (i < limitador || numeroUsuario == numeroMaquina)
             {   
                 numeroUsuario = Convert.ToInt32(Console.ReadLine());
                 if (numeroUsuario == numeroMaquina)
                 {
-                    Console.WriteLine($"Voce acertou o numero é {numeroMaquina} e precisou de {i + 1} tentativas");
                     break;
                 }
                 else if (numeroUsuario > numeroMaquina)
@@ -58,9 +66,20 @@
                     i++;
                 }            
             }
+            // Encerrando o cronometro
+            stopwatch.Stop();
+
+            //Convertendo o tempo para minutos e segundos
+            TimeSpan time_span = stopwatch.Elapsed;
+            int minutos = time_span.Minutes;
+            int segundos = time_span.Seconds;
+
             if (numeroMaquina != numeroUsuario)
             {
-                Console.WriteLine("\nVocê esgotou suas tentativas e não conseguiu acertar o numero correto");
+                Console.WriteLine($"\nVocê esgotou suas tentativas e não conseguiu acertar o numero correto, gastando {minutos} minutos e {segundos} segundos");
+            }
+            else{
+                Console.WriteLine($"Voce acertou o numero é {numeroMaquina} e precisou de {i + 1} tentativas, em {minutos} minutos e {segundos} segundos");
             }
             // Pergunta se o jogador quer continuar e se sim matem o loop como while
             Console.Write("Gostaria de continuar (Y/N): ");
