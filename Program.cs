@@ -4,10 +4,15 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        // Placar com as melhores pontuações em cada dificuldade
+        int facil = 0;
+        int medio = 0;
+        int dificil = 0;
+
         // Chamei a função Random para gerar um numero aleatorio entre 1 e 101, 101 não é sorteado, para ser o numero pensado pela maquina
         Random random = new Random();
         bool continuar = true;
-        
+
         // Função que mede o tempo decorrido do inicio ate o final
         Stopwatch stopwatch = new Stopwatch();
 
@@ -80,7 +85,24 @@ internal class Program
             }
             else{
                 Console.WriteLine($"Voce acertou o numero é {numeroMaquina} e precisou de {i + 1} tentativas, em {minutos} minutos e {segundos} segundos");
+                switch (limitador)
+                {
+                    case 3:
+                        dificil = i+1;
+                        break;
+                    case 5: 
+                        medio = i+1;
+                        break;
+                    case 10:
+                        facil = i+1;
+                        break;
+                }
             }
+            //  Espera o usuario clicar em uma tecla e depois limpa a tela para mostrar o placar e perguntar se quer continuar
+            Console.ReadKey();
+            Console.Clear();
+
+            Console.WriteLine($"             PLACAR\nFACIL: {facil} tentativas\nMEDIO: {medio} tentativas\nDIFICIL: {dificil} tentativas");
             // Pergunta se o jogador quer continuar e se sim matem o loop como while
             Console.Write("Gostaria de continuar (Y/N): ");
             string temporaria = Console.ReadLine();
